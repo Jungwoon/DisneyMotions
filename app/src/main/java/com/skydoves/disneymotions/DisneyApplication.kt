@@ -23,6 +23,7 @@ import com.skydoves.disneymotions.di.networkModule
 import com.skydoves.disneymotions.di.persistenceModule
 import com.skydoves.disneymotions.di.repositoryModule
 import com.skydoves.disneymotions.di.viewModelModule
+import com.skydoves.sandwich.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import timber.log.Timber

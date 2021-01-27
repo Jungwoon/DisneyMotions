@@ -46,6 +46,7 @@ class MainRepository constructor(
   ) = flow {
     val posters: List<Poster> = posterDao.getPosterList()
     if (posters.isEmpty()) {
+
       // request API network call asynchronously.
       disneyService.fetchDisneyPosterList().apply {
         // handle the case when the API request gets a success response.

@@ -39,8 +39,10 @@ class PosterDetailActivity : DatabindingActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
+
     val poster = getViewModel<PosterDetailViewModel>().getPoster(posterId)
     applyMaterialTransform(poster.name)
+
     binding.apply {
       this.poster = poster
       lifecycleOwner = this@PosterDetailActivity
